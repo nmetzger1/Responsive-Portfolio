@@ -1,0 +1,345 @@
+html, body{
+	height: 100%;
+}
+
+header{
+	background-color: #ffffff;
+	width:100%;
+	min-width: 1040px;
+	height: 80px;
+	border-bottom: 2px;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-style: solid;
+	border-color: #cccccc;
+	float: left;	
+}
+
+h1,h2,h3{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;	
+}
+
+h1{
+	position: relative;
+	left: 35px;
+	padding-top: 28px;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	width: 300px;
+	height: 53px;
+	text-align: center;
+	font-size: xx-large;
+
+}
+
+h2,h3{
+	color: #4aaaa5;
+}
+
+h2{
+	font-size: x-large;
+	padding-left: 5px;
+}
+
+h3{
+	font-size: larger;
+}
+
+body{
+	font-family: 'Arial', 'Helvetica Neue', sans-serif;
+	color: #777777;	
+	background-image: url("../images/concrete.png");
+	background-color: #777777;	
+}
+
+
+/* Main Content for all pages */
+.page-content{
+	background-color: #ffffff;
+	width: 616px;
+	border:1px solid #dddddd;
+	padding: 1em;
+	float: left;
+	margin-top: 15px;
+	margin-left: 35px;
+	margin-bottom: 15px;
+	height: auto !important;	
+}
+
+.wrap{
+	min-height: 100%;
+	margin-bottom: -35px;
+}
+
+.wrap:after{
+	content: "";
+	display: block;
+}
+
+hr{
+	border-style: solid;
+	border-color: #cccccc;
+	width: 98%;
+	margin-top: 15px;
+}
+
+.connect{
+	position: absolute;
+	left: 700px;
+	top: 97px;
+	background-color: #ffffff;
+	text-align: center;	
+	border:1px solid #dddddd;
+	padding: 1em;
+	width: 236px;
+}
+
+.conn-img{
+	height: 65px;
+	width: auto;
+	padding: 4px;
+}
+
+.conn-img:hover{
+	border: 2px solid #664AC1;
+	padding: 2px;
+}
+
+
+a{
+	text-decoration: none;
+	color: #777777;
+}
+
+.navigation{
+	position: absolute;
+	min-width: 300px;
+	top: 35px;
+	left: 45%;
+	text-align: center;
+	color: #777777;
+}
+
+.navigation a:hover{
+	background-color: #664AC1;
+	opacity: .75;
+	color: #ffffff;
+	border: 2px solid #664AC1;
+	margin: 0 -2px;
+}
+
+li{
+	display: inline-block;
+	padding: 10px;
+}
+
+/* Index.html */
+
+.aboutme{
+	padding: .5em;
+	line-height: 1.35em;
+}
+
+#image1{
+	float: left;
+	width: 200px;
+	height: auto;
+	margin: 0 10px 0 5px;
+}
+
+
+/*  Contact Page   */
+
+input, textarea{
+	border:1px solid #dddddd;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	width: 97%;
+	padding: 5px;
+
+}
+
+textarea{
+	resize: none;
+	height: 15em;
+}
+
+button{
+	background-color: #4aaaa5;
+	border: none;
+	padding: 9px 27px;
+	color: #ffffff;
+}
+
+/* Portfolio Page */
+
+/*  div containing port-image & labelbox   */
+.imagediv{
+	position: relative;
+	width: 270px;
+	display: inline-block;
+	margin: 10px 10px;
+	left: 10px;	
+}
+
+.port-image{
+	height: auto;
+	width: 260px;
+}
+
+.imagediv:hover{
+	opacity: .5;
+}
+
+.imagediv:hover .labelbox{
+	font-size: 175%;
+	padding-top: 10px;
+	height: 43px;
+	background-color: #664AC1;
+}
+
+.labelbox{
+	position: absolute;
+	height: 40px;
+	width: 260px;
+	top: 125px;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;	
+	padding-top: .5em;
+	font-size: x-large;
+}
+
+/* Footer Section  */
+.footer{
+	border-top: 6px solid #4aaaa5;
+	background-color: #666666;
+	color: #ffffff;
+	text-align: center;
+	padding-top: .5em;
+	margin-top: -69px;
+	height: 55px;
+	line-height: 3em;
+}
+
+
+.footer, .wrap:after{
+	clear: both;
+	width: 100%;
+	min-width: 1040px;
+}
+
+@media screen and (max-width: 980px) {
+	.page-content{
+		width: 300px;
+	}
+	#image1{
+		width: 290px;
+	}
+	.connect{
+		left: 410px;
+	}
+
+	header, .footer, .wrap:after{
+		min-width:100%;
+	}
+
+	.navigation{
+		right: 5%;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.page-content{
+		width: 87%;
+		margin: 15px 35px 15px 35px;
+	}
+	#image1{
+		width: 50%;
+		height: auto;
+	}
+	.connect{
+		position: static;
+		float: left;
+		clear: both;
+		left:0;
+		margin-left: 35px;
+		margin-bottom: 15px;
+		width: 87%;
+	}
+
+	h3, .conn-img{
+		float:left;
+	}
+
+	.navigation{
+		right: -50px;
+	}
+
+	.imagediv{
+		width: 45%;
+		left:0;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	header{
+		position: static;
+		height: 120px;
+	}
+
+	h1{
+		width: 100%;
+		margin: 0;
+		left: 0;
+	}
+
+	.navigation{
+		position: static;
+		float: left;
+		width: 100%;
+		clear: both;
+		height: 40px;
+		margin-bottom: 15px;
+		background-color: #fff;
+		left: 0;
+		top: 0;
+		border: solid 1px #4aaaa5;
+	}
+
+	.imagediv{
+		width: 87%;
+		height: auto;
+		margin: 5%;
+	}
+
+	.port-image, .labelbox{
+		width: 100%;
+		height: auto;
+	}
+
+	.labelbox{
+		top: 45%;
+		width: 100%;
+		height: 25%;
+		max-height: 40px;
+	}
+
+	#image1{
+		width: 90%;
+		margin-bottom: 10px;
+	}
+
+	.page-content{
+		position: static;
+		float: left;
+		left: 0;
+	}
+
+
+
+}
