@@ -304,11 +304,12 @@ button{
 		width: 100%;
 		clear: both;
 		height: 40px;
+		margin-left: 0;
 		margin-bottom: 15px;
 		background-color: #fff;
 		left: 0;
 		top: 0;
-		border: solid 1px #4aaaa5;
+		border-bottom: solid 1px #4aaaa5;
 	}
 
 	.imagediv{
@@ -338,6 +339,11 @@ button{
 		position: static;
 		float: left;
 		left: 0;
+		margin: 3%;
+	}
+
+	.connect{
+		margin: 3%;
 	}
 
 
